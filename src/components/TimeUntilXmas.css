@@ -1,0 +1,195 @@
+.time-show {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3vw;
+    color: #3379ac;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.445));
+    font-family: 'Jua', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.time-show div {
+    display: flex;
+    margin: 0;
+}
+
+.time-show div span {
+    height: 25px;
+    vertical-align: bottom;
+}
+
+.time-show div p {
+    margin: 0
+}
+
+.homeTitle {
+    text-align: center;
+    font-size: 2vw;
+    color: #003b55d2;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 32vw;
+    font-weight: 100;
+    height: 1.9vw;
+    vertical-align: bottom;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.445));
+    font-family: 'Jua', sans-serif;
+    text-transform: uppercase;
+}
+
+.xtreeWrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 25vh;
+}
+
+.xtreeWrapper img {
+    margin-top: 1vw;
+    width: 35vh;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.445));
+}
+
+/* countdown in the gift */
+.giftClock {
+    color: #003c55;
+    position: absolute;
+    bottom: 0;
+    right: 38vw;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.445));
+    font-family: 'Jua', sans-serif;
+}
+
+.row1,
+.row2 {
+    display: flex;
+}
+
+.row1 div {
+    margin: 0.5vw;
+    border: 1px solid #003c55;
+    padding: 0.3vw;
+    width: 3vw;
+}
+
+.row2 div {
+    margin: 0.5vw;
+    border: 1px solid #003c55;
+    padding: 0.3vw;
+    width: 3vw;
+}
+
+.row1 #a1 {
+    border-right: 5px solid    #003c55;
+    border-bottom: 5px solid #003c55;;
+
+}
+
+.row1 #b1 {
+    border-left: 5px solid #003c55;;
+    border-bottom: 5px solid #003c55;
+}
+
+.row2 #a2 {
+    border-right: 5px solid #003c55;
+    border-top: 5px solid #003c55;
+}
+
+.row2 #b2 {
+    border-left: 5px solid #003c55;
+    border-top: 5px solid #003c55;
+}
+
+
+#a1,
+#a2,
+#b1,
+#b2 {
+    margin: 0;
+    text-align: center;
+}
+
+.horizontalLine{
+    width: 100%;
+    height:1px;
+    background-color: #3379ac;
+}
+
+#snowman{
+    position: absolute;
+    bottom: 0;
+    left:15vw;
+    width: 10vw;
+    height: 16vw;
+}
+#sleigh{
+    position: absolute;
+    bottom: 0;
+    right:0px;
+    width: 10vw;
+    height: 6vw;
+    animation: toLeft 2s ease forwards;
+}
+
+
+
+@keyframes toLeft {
+    0% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(-28vw);
+    }
+  }
+
+@media screen and (max-width: 850px) {
+    .giftClock{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .row1 div {
+        margin: 0.5vw;
+        border: 1px solid #003c55;
+        padding: 0.3vw;
+        width: 2vw;
+    }
+    
+    .row2 div {
+        margin: 0.5vw;
+        border: 1px solid #003c55;
+        padding: 0.3vw;
+        width: 2vw;
+    }
+    .giftClock{
+        right:35vw
+    }
+
+    .xtreeWrapper img {
+        margin-top: 1vw;
+        width: 25vh;
+        
+    }
+    
+    @keyframes toLeft {
+        0% {
+          transform: translateX(0px);
+          opacity: 0;
+        }
+      
+        100% {
+          transform: translateX(-25vw);
+        }
+      }
+}

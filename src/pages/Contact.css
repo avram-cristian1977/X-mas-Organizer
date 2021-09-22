@@ -1,0 +1,145 @@
+.userDataFormContainer{
+    background-color: #003c55;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    background-color: rgba(231, 249, 252, 0.801);
+    border-radius: 20px 20px 0px 0px;
+    z-index: 200;
+    border:1px solid #003c55;
+    margin-top: 50px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    border-bottom: none;
+  
+}
+
+.createFormDataWrapper {
+    bottom: -20px;
+    height: 230px;
+    background-color: #003c55;
+    font-weight: bold;
+    color: white;
+    width: 300px;
+    margin: auto;
+    font-size: 15px;
+    border-radius:  10px 10px 0px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    box-shadow: 5px 1px 15px rgb(67, 110, 116);
+}
+
+
+.createFormDataWrapper input {
+    margin: 3px 0 3px 0;
+}
+
+
+.horizontalLine4{
+
+    width: 100%;
+    height:1px;
+  background-color: #003c55;
+
+}
+
+.userMessageWrapper{
+    border-radius:  0 0 20px 20px;
+    height: 110px;
+    width: 500px;
+    border-top: none;
+    border: 1px solid rgb(4, 49, 80);
+    box-shadow: 10px 10px 10px 1px rgb(112, 154, 172);
+    background-color: rgba(231, 249, 252, 0.733);
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+#root > div.userDataFormContainer > div > form > label:nth-child(1){
+    margin-top: 5px;
+}
+textarea{
+    background-color: white;
+    color: #003c55;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%,-50%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+   
+
+}
+
+
+.sendMsgBtn{
+    height: 20px;
+    position: absolute;
+    bottom: 35px;
+    background-color:white;
+    font-weight: bold;
+    color: #003c55;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border:none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px;
+    margin: 3px;
+   
+}
+
+.contactTitle{
+    margin:0;
+}
+
+.messageSent{
+    min-height: 30px;
+    position: absolute;
+    bottom: -20px;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    text-align: center;
+}
+
+@media (max-width:600px) {
+
+    .userDataFormContainer{
+        width: 250px;
+      
+    }
+    
+    .createFormDataWrapper {
+        width: 200px;
+    }
+    textarea{
+        width: 90%;
+    }
+    
+}
+
+@media (max-width:400px) {
+
+    .userDataFormContainer{
+        width: 150px;
+      
+    }
+    
+    .createFormDataWrapper {
+        width: 100px;
+    }
+    textarea{
+        width: 70%;
+    }
+   
+}

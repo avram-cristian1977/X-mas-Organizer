@@ -1,0 +1,68 @@
+#scroll-container {
+  width: 30%;
+  margin: auto;
+  margin-top: 0px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002535;
+    font-size: 15px;
+    height:150px;
+    overflow: hidden;
+   
+   
+  }
+  
+  #scroll-text {
+    height: 100%;
+    text-align: center;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 2s linear infinite;
+    -webkit-animation: my-animation 2s linear infinite;
+    animation: my-animation 10s linear infinite;
+  }
+
+  #scroll-text:hover {
+    height: 30%;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
+
+  .socialMediaIcons{
+    width: 220px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+  }
+
+  .socialMediaIcon{
+   font-size: 30px;
+  }
